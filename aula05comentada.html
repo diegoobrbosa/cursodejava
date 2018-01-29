@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title> Javascript Aula03</title>
+
+       <style type="text/css">
+
+        body {background-color:#000;}
+        #xti {display:block; margin:20px auto;}
+
+       </style>
+       <script type="text/javascript"> // tag de abertura do java
+
+        function hackear() {
+          var nome = "ratter"; //string tanto com aspas duplas como aspas simples
+
+          alert (nome); // mostrar alerta na tela exibindo a variavel nome
+
+          window.document.getElementById("xti").src = "teste2.png"; // seleciona o imagem pelo id e altera para outra imagem
+        }
+        //comentario da img linha 24 / onclick chama function hackear e exibe na tela a imagem teste2
+       </script>
+</head>
+<body >
+  <img id="xti" onclick="hackear();" src="teste.jpg"/>
+
+</body>
+</html>
